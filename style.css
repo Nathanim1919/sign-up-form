@@ -158,7 +158,9 @@ span p.invalid::before{
 .copy{
     place-self: center;
 }
-
+input.error{
+    border: 1px solid red;
+}
 
 @media(max-width:700px){
     body{
@@ -198,7 +200,6 @@ span p.invalid::before{
         height: 50vh;
         display: grid;
         width: 400px;
-        border: 2px solid black;
         align-items: center;
     }
 
@@ -222,4 +223,6 @@ span p.invalid::before{
         position: relative;
         border-radius: 5px;
     }
+
+    
 }
