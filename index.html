@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>sign up form</title>
+</head>
+<body>
+    <div class="image">
+        <div class="overlay">
+             <img src="odin-lined.png" alt="">
+             <h1>Bcoder</h1>
+        </div>
+
+        <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
+
+    </div>
+    <div class="forms">
+        <div class="header">
+            <p>I Know one day i an going to have This kind of a real online service!You have to know you need something like this in your life to help you realize your deepest dreams.<span>Sign up now to get started</span></p>
+        </div>
+
+        <form action="#">
+        <div class="form">
+           
+                    <span>
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" onkeyup="validateName1()">
+                        <p class="fname">name should have at least 3 characters</p>
+                    </span>
+                    <span>
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" onkeyup="validateName2()">
+                        <p class="lname">name should have at least 3 characters</p>
+                    </span>
+
+                    <span>
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="text" onkeyup="validateEmail(this.value)">
+                        <p class="email">e.g nathan@gmail.com</p>
+                    </span>
+                    <span>
+                        <label for="pnumber">PHONE NUMBER</label>
+                        <input type="text" id="pnumber" onkeyup="validatePhone(this.value)">
+                        <p class="phone">e.g 0942581962</p>
+                    </span>
+
+                    <span>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" onkeyup="validatePass()">
+                        <p class="password">password should have at least 8 characters</p>
+                    </span>
+
+                    <span>
+                        <label for="cpassword"> CONFIRM PASSWORD</label>
+                        <input type="password" id="cpassword" onkeyup="validatePass()"> 
+                        <p class="cpassword">password do not match</p>
+                    </span>      
+        </div>
+        <div class="footer">
+            <input type="submit" value="create account">
+            <p>Already have an account?<a href="#">Log in</a></p>
+            <p class="copy">&copy copyright to nathanim tadele</p>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
